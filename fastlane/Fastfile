@@ -1,0 +1,160 @@
+import "./lane/common_lane.rb"
+import "./lane/testflight_lane.rb"
+
+fastlane_require 'dotenv'
+
+# lane :deploy do |options|
+#     env = options[:env]
+#     sh("fastlane android deploy env:#{env}")
+#     sh("fastlane ios deploy env:#{env} && fastlane android deploy env:#{env}")
+#     sh("fastlane ios deploy env:#{env}")
+    # sh("fastlane android deploy env:#{env}")
+#     reset_git_repo(force: true, disregard_gitignore: false)
+# end
+
+lane :increase_build_number_android do |options|
+  env = options[:env]
+#     sh("fastlane android deploy env:#{env}")
+#     sh("fastlane ios deploy env:#{env} && fastlane android deploy env:#{env}")
+#     sh("fastlane ios deploy env:#{env}")
+  sh("fastlane android deploy env:#{env}")
+#     reset_git_repo(force: true, disregard_gitignore: false)
+end
+
+lane :finish_build_telegram do
+    telegram(
+      token: '5769336389:AAHqKAl7JYkgDY8uhKyzWbmon2mSd4f5OAs', # get token from @BotFather
+      chat_id: '-660228011', # https://stackoverflow.com/questions/33858927/how-to-obtain-the-chat-id-of-a-private-telegram-channel
+      text: "🥹🥹 Có build mới bên React Native 😤😤 Mại dô mại dô 🙏🙏",
+    )
+end
+
+lane :start_build_telegram do
+    telegram(
+      token: '5769336389:AAHqKAl7JYkgDY8uhKyzWbmon2mSd4f5OAs', # get token from @BotFather
+      chat_id: '-660228011', # https://stackoverflow.com/questions/33858927/how-to-obtain-the-chat-id-of-a-private-telegram-channel
+      text: "👻👻 Bắt đầu build ứng dụng bên React Native thôi thôi nào 👻👻",
+    )
+end
+
+lane :upload_distribution do |options|
+    env = options[:env]
+#     sh("fastlane android deploy env:#{env}")
+#     sh("fastlane ios deploy env:#{env} && fastlane android deploy env:#{env}")
+#     sh("fastlane ios deploy env:#{env}")
+    apk_path = "#{root_path}/build/app/outputs/flutter-apk/app-#{env}-release.apk"
+    firebase_app_distribution(
+        app: ENV["FIREBASE_APP_ID"],
+        release_notes_file: "fastlane/file/release_note.txt",
+        groups_file: "fastlane/file/group.txt",
+        service_credentials_file: ENV["FIREBASE_ADMIN"],
+        android_artifact_type: "APK",
+        android_artifact_path: apk_path,
+    )
+end
+
+platform :ios do
+  private_lane :build do |options|
+    env = options[:env]
+    log(msg: "Building application", tag: env.upcase)
+    IOS_WORKSPACE_PATH="ios/Runner.xcworkspace"
+    ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "300"
+    ENV["FASTLANE_XCODE_LIST_TIMEOUT"] = "300"
+    build_app(
+        scheme: env,
+        workspace: IOS_WORKSPACE_PATH,
+        export_method: "app-store",
+        export_xcargs: "-allowProvisioningUpdates",
+        silent: true,
+        clean: true,
+        export_options: {
+          provisioningProfiles: {
+            ENV["APP_ID"] => ENV["PROVISIONING_NAME"],
+          },
+        },
+        output_directory: "./.export/",
+    )
+  end
+
+  private_lane :run_workspace do |options|
+    env = options[:env]
+    ### Setup ENV
+    before_all_lane(env: env)
+    pub_get()
+    ### Prepare
+    pod_clean()
+    pod_install()
+    IOS_PROJECT_PATH="./ios/Runner.xcodeproj"
+
+    ### Update version
+    testflight_build_number = testflight_get_lastest_build_number()
+
+    new_build_number = testflight_build_number
+
+    increment_build_number({
+      build_number: new_build_number,
+      xcodeproj: IOS_PROJECT_PATH
+    })
+    
+    ENV["NEW_BUILD_NUMBER"] = "#{new_build_number}"
+
+    ### Build
+    build(env: env)
+
+    deploy_to_testfilght()
+
+    ### Reset
+    clean_build_artifacts
+#     reset_git_repo(force: true)
+  end
+
+  lane :deploy do |options|
+    env = options[:env]
+    ENV["SCHEME"] = "#{env}"
+    run_workspace(env: env)
+  end
+end
+
+platform :android do
+
+  private_lane :cd_android do
+    puts "🐤🐤 Go to android folder 🐤🐤"
+    sh_on_root(command: "cd android")
+  end
+
+  private_lane :build do |options|
+    env = options[:env]
+    before_all_lane(env: env)
+    # flutter_pub
+    # cd_android
+    puts "🐤🐤 Increase version code 🐤🐤"
+    latest_release = firebase_app_distribution_get_latest_release(
+         app: ENV["FIREBASE_APP_ID"],
+         service_credentials_file: ENV["FIREBASE_ADMIN"]
+    )
+    puts "🐤🐤 google_play_track_release_names #{latest_release} 🐤🐤"
+    version_code = latest_release[:buildVersion].to_i + 1
+    increment_version_code(
+      gradle_file_path: "#{root_path}/android/app/build.gradle",
+      version_code: version_code
+    )
+#     puts "🐤🐤 Building #{env} application 🐤🐤"
+#     sh("flutter build apk --flavor=#{env}")
+#     apk_path = "#{root_path}/build/app/outputs/flutter-apk/app-#{env}-release.apk"
+#     firebase_app_distribution(
+#         app: ENV["FIREBASE_APP_ID"],
+#         release_notes_file: "fastlane/file/release_note.txt",
+#         groups_file: "fastlane/file/group.txt",
+#         service_credentials_file: ENV["FIREBASE_ADMIN"],
+#         android_artifact_type: "APK",
+#         android_artifact_path: apk_path,
+#     )
+#     reset_git_repo(force: true)
+  end
+
+  lane :deploy do |options|
+    env = options[:env]
+    build(env: env)
+  end
+
+end
