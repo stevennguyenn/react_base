@@ -18,7 +18,7 @@ workflows:
         #     ssh-add /tmp/ssh_key
         - name: Git clone
           script: | 
-            git clone git@gitlab.com:vihat_outsource/merchantapp.git
+            git clone https://oauth2:$GITLABTOKEN@gitlab.com/vihat_outsource/merchantapp.git
         - name: Install npm dependencies
           script: | 
             npm install
@@ -77,7 +77,7 @@ workflows:
           #     ssh-add /tmp/ssh_key
           - name: Git clone
             script: |
-              git clone git@gitlab.com:vihat_outsource/merchantapp.git
+              git clone https://oauth2:$GITLABTOKEN@gitlab.com/vihat_outsource/merchantapp.git
           - name: Set up code signing settings on Xcode project
             script: xcode-project use-profiles
           - name: Set up fastlane, notification, increase build number
