@@ -13,6 +13,7 @@ import {
   todoRequestAction,
 } from '@reduxCore/main/slice';
 import { styles } from './styles';
+import Config from 'react-native-config';
 
 const IMG_BACKGROUND = require('@assets/images/pictures/background.jpg');
 
@@ -62,8 +63,8 @@ const RegisterScrenn: React.FC<Props> = () => {
       source={IMG_BACKGROUND}
       resizeMode="cover">
       <View style={styles.wrapBox}>
-        <Text style={styles.title} bold fontSize={30}>
-          Login
+        <Text style={styles.title} bold fontSize={24}>
+          {'Environment: ' + Config.GOOGLE_URL}
         </Text>
         <TextInput
           style={styles.textinput}

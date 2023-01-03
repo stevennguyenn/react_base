@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  sr_marketplace_reactnative
+//
+//  Created by PRO 2019 16' on 03/01/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include? "tmp.xcconfig"

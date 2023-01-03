@@ -4,11 +4,19 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '12.4'
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'sr_marketplace_reactnative' do
+def share_pods
+  pod 'react-native-config', :path => '../node_modules/react-native-config'
+  # For extensions without React dependencies
+  pod 'react-native-config/Extension', :path => '../node_modules/react-native-config'
+end
+
+abstract_target 'sr_marketplace_reactnativeCommonPods' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
   flags = get_default_flags()
+  
+  share_pods
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -39,5 +47,14 @@ target 'sr_marketplace_reactnative' do
       :mac_catalyst_enabled => false
     )
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
+  end
+  
+  target 'develop' do
+  end
+
+  target 'staging' do
+  end
+
+  target 'production' do
   end
 end

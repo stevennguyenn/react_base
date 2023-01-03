@@ -83,6 +83,19 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply plugin: "com.android.application"
+
+// add this block
+project.ext.envConfigFiles = [
+   productiondebug: ".env.production",
+   productionrelease: ".env.production",
+   developrelease: ".env.develop",
+   developdebug: ".env.develop",
+   stagingrelease: ".env.staging",
+   stagingdebug: ".env.staging"
+]
+
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle" // <- add this line
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -133,6 +146,29 @@ android {
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
+
+    // add this block
+    flavorDimensions "default"
+    productFlavors {
+        production {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId "com.vihat.marketplace"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.sr_marketplace_reactnative"
+        }
+        staging {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId "com.vihat.marketplace.staging"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.sr_marketplace_reactnative"
+        }
+        develop {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId "com.vihat.marketplace.develop"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+            resValue "string", "build_config_package", "com.sr_marketplace_reactnative"
+        }
+    }
 
     defaultConfig {
         applicationId "com.sr_marketplace_reactnative"
@@ -221,6 +257,7 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            matchingFallbacks = ['debug', 'release'] // <- add this line
         }
         release {
             // Caution! In production, you need to generate your own keystore file.

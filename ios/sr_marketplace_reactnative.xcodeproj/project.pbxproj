@@ -8,39 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* sr_marketplace_reactnativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* sr_marketplace_reactnativeTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-sr_marketplace_reactnative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-sr_marketplace_reactnative.a */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		18B56C43DB8A34AB27F1CFF9 /* libPods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C0DC05FFBEAF4380E31220 /* libPods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.a */; };
+		5404C34934B3DD35A099D80A /* libPods-sr_marketplace_reactnativeCommonPods-staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EF40D3B8235325A473DF58 /* libPods-sr_marketplace_reactnativeCommonPods-staging.a */; };
+		864012D201449C2E47A73E0D /* libPods-sr_marketplace_reactnativeCommonPods-production.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EBBDF45162EBDC6B3644B5 /* libPods-sr_marketplace_reactnativeCommonPods-production.a */; };
+		AEAF916BD396918D276C5804 /* libPods-sr_marketplace_reactnativeCommonPods-develop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E317F34435935EE8BE3CC7 /* libPods-sr_marketplace_reactnativeCommonPods-develop.a */; };
+		C86501622963C2C800E60AEB /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		C86501632963C2C800E60AEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		C86501672963C2C800E60AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C86501682963C2C800E60AEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		C86501752963C2CE00E60AEB /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		C86501762963C2CE00E60AEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		C865017A2963C2CE00E60AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C865017B2963C2CE00E60AEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		C86501882963C2D000E60AEB /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		C86501892963C2D000E60AEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		C865018D2963C2D000E60AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C865018E2963C2D000E60AEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = sr_marketplace_reactnative;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		00365F422E1D8B05BE8C82EF /* Pods-sr_marketplace_reactnativeCommonPods-production.debug-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-production.debug-production.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production.debug-production.xcconfig"; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* sr_marketplace_reactnativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sr_marketplace_reactnativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* sr_marketplace_reactnativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sr_marketplace_reactnativeTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* sr_marketplace_reactnative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sr_marketplace_reactnative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		083919F4FC456A77229A255A /* Pods-sr_marketplace_reactnativeCommonPods-staging.debug-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-staging.debug-production.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging.debug-production.xcconfig"; sourceTree = "<group>"; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = sr_marketplace_reactnative/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = sr_marketplace_reactnative/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = sr_marketplace_reactnative/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = sr_marketplace_reactnative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = sr_marketplace_reactnative/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-sr_marketplace_reactnative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnative.debug.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnative/Pods-sr_marketplace_reactnative.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-sr_marketplace_reactnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnative.release.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnative/Pods-sr_marketplace_reactnative.release.xcconfig"; sourceTree = "<group>"; };
+		1AD772C3A421525D37A3596D /* Pods-sr_marketplace_reactnativeCommonPods-develop.release-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-develop.release-develop.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop.release-develop.xcconfig"; sourceTree = "<group>"; };
+		1ADC83719806BDB313ED7007 /* Pods-sr_marketplace_reactnativeCommonPods-staging.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-staging.release-staging.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging.release-staging.xcconfig"; sourceTree = "<group>"; };
+		1B5E90DF4B1AE4F16F13E587 /* Pods-sr_marketplace_reactnativeCommonPods-staging.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-staging.debug-staging.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		1B9C2C775BFFF41E2D1F36E6 /* Pods-sr_marketplace_reactnativeCommonPods-production.release-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-production.release-develop.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production.release-develop.xcconfig"; sourceTree = "<group>"; };
+		1F697115320228F09ABF76C0 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-production.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-production.xcconfig"; sourceTree = "<group>"; };
+		29A692F4E21B7A8E395BF8B7 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-production.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-production.xcconfig"; sourceTree = "<group>"; };
+		2BF9FC40FC46D85340F0CF81 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-develop.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-develop.xcconfig"; sourceTree = "<group>"; };
+		42703207B02CB3728F75EAAB /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		46EBBDF45162EBDC6B3644B5 /* libPods-sr_marketplace_reactnativeCommonPods-production.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sr_marketplace_reactnativeCommonPods-production.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC49F949D90B0417CEE32A9 /* Pods-sr_marketplace_reactnativeCommonPods-production.debug-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-production.debug-develop.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production.debug-develop.xcconfig"; sourceTree = "<group>"; };
+		4CD84890E21AE91CDD971BC7 /* Pods-sr_marketplace_reactnativeCommonPods-production.release-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-production.release-production.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production.release-production.xcconfig"; sourceTree = "<group>"; };
+		574BEA8CA581A7582BED3A04 /* Pods-sr_marketplace_reactnativeCommonPods-develop.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-develop.release-staging.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop.release-staging.xcconfig"; sourceTree = "<group>"; };
+		579A40817BE2BD6EBEB7B4F9 /* Pods-sr_marketplace_reactnativeCommonPods-staging.debug-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-staging.debug-develop.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging.debug-develop.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.debug.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-sr_marketplace_reactnative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sr_marketplace_reactnative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		723165FD292C7D93008D6DA1 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		723165FE292C7D93008D6DA1 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		723165FF292C7D93008D6DA1 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
@@ -58,8 +68,36 @@
 		7231660B292C7D93008D6DA1 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		7231660C292C7D93008D6DA1 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = sr_marketplace_reactnative/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83E588C10959E9D7A08A0272 /* Pods-sr_marketplace_reactnativeCommonPods-develop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-develop.release.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop.release.xcconfig"; sourceTree = "<group>"; };
+		86EF40D3B8235325A473DF58 /* libPods-sr_marketplace_reactnativeCommonPods-staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sr_marketplace_reactnativeCommonPods-staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		884BCC26CB802C4CF8270C28 /* Pods-sr_marketplace_reactnativeCommonPods-develop.debug-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-develop.debug-develop.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop.debug-develop.xcconfig"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.release.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		924DD3C550791652696CF34D /* Pods-sr_marketplace_reactnativeCommonPods-staging.release-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-staging.release-production.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging.release-production.xcconfig"; sourceTree = "<group>"; };
+		9FDBB71D9184F4C0718C5B45 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-develop.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-develop.xcconfig"; sourceTree = "<group>"; };
+		A2AD446B6C0A7087DF127387 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-staging.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-staging.xcconfig"; sourceTree = "<group>"; };
+		AD34D3250359F8CB37187866 /* Pods-sr_marketplace_reactnativeCommonPods-production.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-production.release.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production.release.xcconfig"; sourceTree = "<group>"; };
+		BA1D73B4B66EAC5B60BB77CD /* Pods-sr_marketplace_reactnativeCommonPods-develop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-develop.debug.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop.debug.xcconfig"; sourceTree = "<group>"; };
+		BE42068E3843E2E786066392 /* Pods-sr_marketplace_reactnativeCommonPods-staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-staging.release.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging.release.xcconfig"; sourceTree = "<group>"; };
+		C133F2F1A5D4679D671FCB9F /* Pods-sr_marketplace_reactnativeCommonPods-production.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-production.release-staging.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production.release-staging.xcconfig"; sourceTree = "<group>"; };
+		C324A370B68860579485E5FE /* Pods-sr_marketplace_reactnativeCommonPods-production.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-production.debug.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production.debug.xcconfig"; sourceTree = "<group>"; };
+		C865016F2963C2C800E60AEB /* develop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = develop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86501702963C2C800E60AEB /* Info-develop.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-develop.plist"; path = "/Users/pro201916/Desktop/react_native/vihat_base/ios/Info-develop.plist"; sourceTree = "<absolute>"; };
+		C86501822963C2CE00E60AEB /* staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = staging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86501832963C2CE00E60AEB /* Info-staging.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-staging.plist"; path = "/Users/pro201916/Desktop/react_native/vihat_base/ios/Info-staging.plist"; sourceTree = "<absolute>"; };
+		C86501952963C2D000E60AEB /* production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = production.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86501962963C2D100E60AEB /* Info-production.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-production.plist"; path = "/Users/pro201916/Desktop/react_native/vihat_base/ios/Info-production.plist"; sourceTree = "<absolute>"; };
+		C86501972963CAF200E60AEB /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		CABC737B11FA751C3BFE4C01 /* Pods-sr_marketplace_reactnativeCommonPods-staging.release-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-staging.release-develop.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging.release-develop.xcconfig"; sourceTree = "<group>"; };
+		CCD047AC0C30F9BF8B0F5C47 /* Pods-sr_marketplace_reactnativeCommonPods-develop.debug-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-develop.debug-production.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop.debug-production.xcconfig"; sourceTree = "<group>"; };
+		DB9DDEC19B6FFAC43499D489 /* Pods-sr_marketplace_reactnativeCommonPods-develop.release-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-develop.release-production.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop.release-production.xcconfig"; sourceTree = "<group>"; };
+		DF72CEA503E5A0E174861EEE /* Pods-sr_marketplace_reactnativeCommonPods-staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-staging.debug.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging.debug.xcconfig"; sourceTree = "<group>"; };
+		E3C0DC05FFBEAF4380E31220 /* libPods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E452E94EF5A0405533985B60 /* Pods-sr_marketplace_reactnativeCommonPods-develop.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-develop.debug-staging.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop.debug-staging.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EEC977D345454E8CB7501F8F /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1E317F34435935EE8BE3CC7 /* libPods-sr_marketplace_reactnativeCommonPods-develop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sr_marketplace_reactnativeCommonPods-develop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65D0171BC2AF38A6DC9D448 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-staging.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		FF0259179703FF4F3DCDE6D6 /* Pods-sr_marketplace_reactnativeCommonPods-production.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sr_marketplace_reactnativeCommonPods-production.debug-staging.xcconfig"; path = "Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production.debug-staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,15 +105,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.a in Frameworks */,
+				18B56C43DB8A34AB27F1CFF9 /* libPods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+		C86501642963C2C800E60AEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-sr_marketplace_reactnative.a in Frameworks */,
+				AEAF916BD396918D276C5804 /* libPods-sr_marketplace_reactnativeCommonPods-develop.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86501772963C2CE00E60AEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5404C34934B3DD35A099D80A /* libPods-sr_marketplace_reactnativeCommonPods-staging.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C865018A2963C2D000E60AEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864012D201449C2E47A73E0D /* libPods-sr_marketplace_reactnativeCommonPods-production.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,8 +170,10 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-sr_marketplace_reactnative.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.a */,
+				F1E317F34435935EE8BE3CC7 /* libPods-sr_marketplace_reactnativeCommonPods-develop.a */,
+				46EBBDF45162EBDC6B3644B5 /* libPods-sr_marketplace_reactnativeCommonPods-production.a */,
+				E3C0DC05FFBEAF4380E31220 /* libPods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.a */,
+				86EF40D3B8235325A473DF58 /* libPods-sr_marketplace_reactnativeCommonPods-staging.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +211,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C86501972963CAF200E60AEB /* Config.xcconfig */,
 				723165FC292C7D93008D6DA1 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* sr_marketplace_reactnative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -162,6 +219,9 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				C86501702963C2C800E60AEB /* Info-develop.plist */,
+				C86501832963C2CE00E60AEB /* Info-staging.plist */,
+				C86501962963C2D100E60AEB /* Info-production.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -171,8 +231,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* sr_marketplace_reactnative.app */,
 				00E356EE1AD99517003FC87E /* sr_marketplace_reactnativeTests.xctest */,
+				C865016F2963C2C800E60AEB /* develop.app */,
+				C86501822963C2CE00E60AEB /* staging.app */,
+				C86501952963C2D000E60AEB /* production.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,10 +242,40 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-sr_marketplace_reactnative.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-sr_marketplace_reactnative.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.release.xcconfig */,
+				BA1D73B4B66EAC5B60BB77CD /* Pods-sr_marketplace_reactnativeCommonPods-develop.debug.xcconfig */,
+				83E588C10959E9D7A08A0272 /* Pods-sr_marketplace_reactnativeCommonPods-develop.release.xcconfig */,
+				C324A370B68860579485E5FE /* Pods-sr_marketplace_reactnativeCommonPods-production.debug.xcconfig */,
+				AD34D3250359F8CB37187866 /* Pods-sr_marketplace_reactnativeCommonPods-production.release.xcconfig */,
+				42703207B02CB3728F75EAAB /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug.xcconfig */,
+				EEC977D345454E8CB7501F8F /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release.xcconfig */,
+				DF72CEA503E5A0E174861EEE /* Pods-sr_marketplace_reactnativeCommonPods-staging.debug.xcconfig */,
+				BE42068E3843E2E786066392 /* Pods-sr_marketplace_reactnativeCommonPods-staging.release.xcconfig */,
+				884BCC26CB802C4CF8270C28 /* Pods-sr_marketplace_reactnativeCommonPods-develop.debug-develop.xcconfig */,
+				CCD047AC0C30F9BF8B0F5C47 /* Pods-sr_marketplace_reactnativeCommonPods-develop.debug-production.xcconfig */,
+				E452E94EF5A0405533985B60 /* Pods-sr_marketplace_reactnativeCommonPods-develop.debug-staging.xcconfig */,
+				1AD772C3A421525D37A3596D /* Pods-sr_marketplace_reactnativeCommonPods-develop.release-develop.xcconfig */,
+				574BEA8CA581A7582BED3A04 /* Pods-sr_marketplace_reactnativeCommonPods-develop.release-staging.xcconfig */,
+				DB9DDEC19B6FFAC43499D489 /* Pods-sr_marketplace_reactnativeCommonPods-develop.release-production.xcconfig */,
+				4AC49F949D90B0417CEE32A9 /* Pods-sr_marketplace_reactnativeCommonPods-production.debug-develop.xcconfig */,
+				00365F422E1D8B05BE8C82EF /* Pods-sr_marketplace_reactnativeCommonPods-production.debug-production.xcconfig */,
+				FF0259179703FF4F3DCDE6D6 /* Pods-sr_marketplace_reactnativeCommonPods-production.debug-staging.xcconfig */,
+				1B9C2C775BFFF41E2D1F36E6 /* Pods-sr_marketplace_reactnativeCommonPods-production.release-develop.xcconfig */,
+				C133F2F1A5D4679D671FCB9F /* Pods-sr_marketplace_reactnativeCommonPods-production.release-staging.xcconfig */,
+				4CD84890E21AE91CDD971BC7 /* Pods-sr_marketplace_reactnativeCommonPods-production.release-production.xcconfig */,
+				9FDBB71D9184F4C0718C5B45 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-develop.xcconfig */,
+				29A692F4E21B7A8E395BF8B7 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-production.xcconfig */,
+				F65D0171BC2AF38A6DC9D448 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug-staging.xcconfig */,
+				2BF9FC40FC46D85340F0CF81 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-develop.xcconfig */,
+				A2AD446B6C0A7087DF127387 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-staging.xcconfig */,
+				1F697115320228F09ABF76C0 /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release-production.xcconfig */,
+				579A40817BE2BD6EBEB7B4F9 /* Pods-sr_marketplace_reactnativeCommonPods-staging.debug-develop.xcconfig */,
+				083919F4FC456A77229A255A /* Pods-sr_marketplace_reactnativeCommonPods-staging.debug-production.xcconfig */,
+				1B5E90DF4B1AE4F16F13E587 /* Pods-sr_marketplace_reactnativeCommonPods-staging.debug-staging.xcconfig */,
+				CABC737B11FA751C3BFE4C01 /* Pods-sr_marketplace_reactnativeCommonPods-staging.release-develop.xcconfig */,
+				1ADC83719806BDB313ED7007 /* Pods-sr_marketplace_reactnativeCommonPods-staging.release-staging.xcconfig */,
+				924DD3C550791652696CF34D /* Pods-sr_marketplace_reactnativeCommonPods-staging.release-production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -205,33 +297,76 @@
 			buildRules = (
 			);
 			dependencies = (
-				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
 			name = sr_marketplace_reactnativeTests;
 			productName = sr_marketplace_reactnativeTests;
 			productReference = 00E356EE1AD99517003FC87E /* sr_marketplace_reactnativeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* sr_marketplace_reactnative */ = {
+		C865015E2963C2C800E60AEB /* develop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "sr_marketplace_reactnative" */;
+			buildConfigurationList = C865016C2963C2C800E60AEB /* Build configuration list for PBXNativeTarget "develop" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
-				FD10A7F022414F080027D42C /* Start Packager */,
-				13B07F871A680F5B00A75B9A /* Sources */,
-				13B07F8C1A680F5B00A75B9A /* Frameworks */,
-				13B07F8E1A680F5B00A75B9A /* Resources */,
-				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				C865015F2963C2C800E60AEB /* [CP] Check Pods Manifest.lock */,
+				C86501602963C2C800E60AEB /* Start Packager */,
+				C86501612963C2C800E60AEB /* Sources */,
+				C86501642963C2C800E60AEB /* Frameworks */,
+				C86501662963C2C800E60AEB /* Resources */,
+				C86501692963C2C800E60AEB /* Bundle React Native code and images */,
+				C865016A2963C2C800E60AEB /* [CP] Embed Pods Frameworks */,
+				C865016B2963C2C800E60AEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = sr_marketplace_reactnative;
+			name = develop;
 			productName = sr_marketplace_reactnative;
-			productReference = 13B07F961A680F5B00A75B9A /* sr_marketplace_reactnative.app */;
+			productReference = C865016F2963C2C800E60AEB /* develop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C86501712963C2CE00E60AEB /* staging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C865017F2963C2CE00E60AEB /* Build configuration list for PBXNativeTarget "staging" */;
+			buildPhases = (
+				C86501722963C2CE00E60AEB /* [CP] Check Pods Manifest.lock */,
+				C86501732963C2CE00E60AEB /* Start Packager */,
+				C86501742963C2CE00E60AEB /* Sources */,
+				C86501772963C2CE00E60AEB /* Frameworks */,
+				C86501792963C2CE00E60AEB /* Resources */,
+				C865017C2963C2CE00E60AEB /* Bundle React Native code and images */,
+				C865017D2963C2CE00E60AEB /* [CP] Embed Pods Frameworks */,
+				C865017E2963C2CE00E60AEB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = staging;
+			productName = sr_marketplace_reactnative;
+			productReference = C86501822963C2CE00E60AEB /* staging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C86501842963C2D000E60AEB /* production */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86501922963C2D000E60AEB /* Build configuration list for PBXNativeTarget "production" */;
+			buildPhases = (
+				C86501852963C2D000E60AEB /* [CP] Check Pods Manifest.lock */,
+				C86501862963C2D000E60AEB /* Start Packager */,
+				C86501872963C2D000E60AEB /* Sources */,
+				C865018A2963C2D000E60AEB /* Frameworks */,
+				C865018C2963C2D000E60AEB /* Resources */,
+				C865018F2963C2D000E60AEB /* Bundle React Native code and images */,
+				C86501902963C2D000E60AEB /* [CP] Embed Pods Frameworks */,
+				C86501912963C2D000E60AEB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = production;
+			productName = sr_marketplace_reactnative;
+			productReference = C86501952963C2D000E60AEB /* production.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -245,9 +380,6 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
-					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -264,8 +396,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* sr_marketplace_reactnative */,
 				00E356ED1AD99517003FC87E /* sr_marketplace_reactnativeTests */,
+				C865015E2963C2C800E60AEB /* develop */,
+				C86501712963C2CE00E60AEB /* staging */,
+				C86501842963C2D000E60AEB /* production */,
 			);
 		};
 /* End PBXProject section */
@@ -278,51 +412,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+		C86501662963C2C800E60AEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C86501672963C2C800E60AEB /* LaunchScreen.storyboard in Resources */,
+				C86501682963C2C800E60AEB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86501792963C2CE00E60AEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C865017A2963C2CE00E60AEB /* LaunchScreen.storyboard in Resources */,
+				C865017B2963C2CE00E60AEB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C865018C2963C2D000E60AEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C865018D2963C2D000E60AEB /* LaunchScreen.storyboard in Resources */,
+				C865018E2963C2D000E60AEB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/.xcode.env.local",
-				"$(SRCROOT)/.xcode.env",
-			);
-			name = "Bundle React Native code and images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
-		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative/Pods-sr_marketplace_reactnative-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative/Pods-sr_marketplace_reactnative-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative/Pods-sr_marketplace_reactnative-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,14 +457,31 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C865015F2963C2C800E60AEB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,65 +496,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-sr_marketplace_reactnative-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-sr_marketplace_reactnativeCommonPods-develop-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative/Pods-sr_marketplace_reactnative-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative/Pods-sr_marketplace_reactnative-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative/Pods-sr_marketplace_reactnative-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD10A7F022414F080027D42C /* Start Packager */ = {
+		C86501602963C2C800E60AEB /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,6 +522,255 @@
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		C86501692963C2C800E60AEB /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		C865016A2963C2C800E60AEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C865016B2963C2C800E60AEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-develop/Pods-sr_marketplace_reactnativeCommonPods-develop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C86501722963C2CE00E60AEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sr_marketplace_reactnativeCommonPods-staging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C86501732963C2CE00E60AEB /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C865017C2963C2CE00E60AEB /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		C865017D2963C2CE00E60AEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C865017E2963C2CE00E60AEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-staging/Pods-sr_marketplace_reactnativeCommonPods-staging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C86501852963C2D000E60AEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sr_marketplace_reactnativeCommonPods-production-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C86501862963C2D000E60AEB /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C865018F2963C2D000E60AEB /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		C86501902963C2D000E60AEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C86501912963C2D000E60AEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-production/Pods-sr_marketplace_reactnativeCommonPods-production-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests/Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -448,29 +782,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13B07F871A680F5B00A75B9A /* Sources */ = {
+		C86501612963C2C800E60AEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
-				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				C86501622963C2C800E60AEB /* AppDelegate.mm in Sources */,
+				C86501632963C2C800E60AEB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86501742963C2CE00E60AEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86501752963C2CE00E60AEB /* AppDelegate.mm in Sources */,
+				C86501762963C2CE00E60AEB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86501872963C2D000E60AEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86501882963C2D000E60AEB /* AppDelegate.mm in Sources */,
+				C86501892963C2D000E60AEB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* sr_marketplace_reactnative */;
-			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.debug.xcconfig */;
+			baseConfigurationReference = 42703207B02CB3728F75EAAB /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -497,7 +841,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-sr_marketplace_reactnative-sr_marketplace_reactnativeTests.release.xcconfig */;
+			baseConfigurationReference = EEC977D345454E8CB7501F8F /* Pods-sr_marketplace_reactnativeCommonPods-sr_marketplace_reactnativeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -519,58 +863,9 @@
 			};
 			name = Release;
 		};
-		13B07F941A680F5B00A75B9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-sr_marketplace_reactnative.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = sr_marketplace_reactnative/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = sr_marketplace_reactnative;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Debug;
-		};
-		13B07F951A680F5B00A75B9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-sr_marketplace_reactnative.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = sr_marketplace_reactnative/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = sr_marketplace_reactnative;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C86501972963CAF200E60AEB /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -643,6 +938,7 @@
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C86501972963CAF200E60AEB /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -706,6 +1002,178 @@
 			};
 			name = Release;
 		};
+		C865016D2963C2C800E60AEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA1D73B4B66EAC5B60BB77CD /* Pods-sr_marketplace_reactnativeCommonPods-develop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZD8A96Y6GA;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Info-develop.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vihat.marketplace.develop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Develop com.vihat.marketplace.develop";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		C865016E2963C2C800E60AEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E588C10959E9D7A08A0272 /* Pods-sr_marketplace_reactnativeCommonPods-develop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZD8A96Y6GA;
+				INFOPLIST_FILE = "Info-develop.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vihat.marketplace.develop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Develop com.vihat.marketplace.develop";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		C86501802963C2CE00E60AEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF72CEA503E5A0E174861EEE /* Pods-sr_marketplace_reactnativeCommonPods-staging.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Info-staging.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vihat.marketplace.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		C86501812963C2CE00E60AEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE42068E3843E2E786066392 /* Pods-sr_marketplace_reactnativeCommonPods-staging.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Info-staging.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vihat.marketplace.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		C86501932963C2D000E60AEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C324A370B68860579485E5FE /* Pods-sr_marketplace_reactnativeCommonPods-production.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Info-production.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vihat.marketplace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		C86501942963C2D000E60AEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD34D3250359F8CB37187866 /* Pods-sr_marketplace_reactnativeCommonPods-production.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Info-production.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vihat.marketplace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -718,20 +1186,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "sr_marketplace_reactnative" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				13B07F941A680F5B00A75B9A /* Debug */,
-				13B07F951A680F5B00A75B9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "sr_marketplace_reactnative" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C865016C2963C2C800E60AEB /* Build configuration list for PBXNativeTarget "develop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C865016D2963C2C800E60AEB /* Debug */,
+				C865016E2963C2C800E60AEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C865017F2963C2CE00E60AEB /* Build configuration list for PBXNativeTarget "staging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86501802963C2CE00E60AEB /* Debug */,
+				C86501812963C2CE00E60AEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C86501922963C2D000E60AEB /* Build configuration list for PBXNativeTarget "production" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86501932963C2D000E60AEB /* Debug */,
+				C86501942963C2D000E60AEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
