@@ -36,5 +36,5 @@ workflows:
             # fi
             cd android
             ./gradlew assembleDevelopRelease
-            artifacts:
-                - android/app/build/outputs/**/*.aab
+          artifacts:
+            - android/app/build/outputs/**/*.aab
