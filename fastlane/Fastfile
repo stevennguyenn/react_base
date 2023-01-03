@@ -17,6 +17,19 @@ lane :increase_build_number_android do |options|
   sh("fastlane android deploy env:#{env}")
 end
 
+lane :increase_build_number_ios do |options|
+  env = options[:env]
+  IOS_PROJECT_PATH="./ios/sr_marketplace_reactnative.xcodeproj"
+  ### Update version
+  testflight_build_number = testflight_get_lastest_build_number()
+
+  increment_build_number({
+    build_number: testflight_build_number,
+    xcodeproj: IOS_PROJECT_PATH
+  })
+end
+
+
 lane :finish_build_telegram do
     telegram(
       token: '5769336389:AAHqKAl7JYkgDY8uhKyzWbmon2mSd4f5OAs', # get token from @BotFather

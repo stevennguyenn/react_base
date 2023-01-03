@@ -60,6 +60,13 @@ workflows:
         scripts:
           - name: Set up code signing settings on Xcode project
             script: xcode-project use-profiles
+          - name: Set up fastlane, notification, increase build number
+            script: |
+              sudo gem install fastlane
+              gem install bundler
+              bundle install
+              fastlane increase_build_number_ios env:develop
+              fastlane start_build_telegram
           - name: Install npm dependencies
             script: |
               npm install
@@ -69,19 +76,12 @@ workflows:
           - name: Set up code signing settings on Xcode project
             script: |
               xcode-project use-profiles --warn-only
-          - name: Increment build number
-            script: |
-              #!/bin/sh
-              set -e
-              set -x
-              cd $CM_BUILD_DIR/ios
-              LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number "$APP_ID" --issuer-id=$ISSUER_ID --private-key=$APP_STORE_CONNECT_PRIVATE_KEY)
-              agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
           - name: Build ipa for distribution
             script: |
               xcode-project build-ipa \
                 --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
                 --scheme "$XCODE_SCHEME"
+              fastlane finish_build_telegram
         artifacts:
           - build/ios/ipa/*.ipa
           - /tmp/xcodebuild_logs/*.log
