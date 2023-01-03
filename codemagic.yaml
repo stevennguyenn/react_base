@@ -68,31 +68,31 @@ workflows:
             script: |
               xcode-project use-profiles --warn-only
           - name: Increment build number
-              script: |
-                #!/bin/sh
-                set -e
-                set -x
-                cd $CM_BUILD_DIR/ios
-                LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number "$APP_ID")
-                agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
+            script: |
+              #!/bin/sh
+              set -e
+              set -x
+              cd $CM_BUILD_DIR/ios
+              LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number "$APP_ID")
+              agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
           - name: Build ipa for distribution
-              script: |
-                xcode-project build-ipa \
-                  --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
-                  --scheme "$XCODE_SCHEME"
+            script: |
+              xcode-project build-ipa \
+                --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
+                --scheme "$XCODE_SCHEME"
           artifacts:
             - build/ios/ipa/*.ipa
             - /tmp/xcodebuild_logs/*.log
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
           publishing:
-          email:
-            recipients:
-              - chaunn@vihatgroup.com
-            notify:
-              success: true
-              failure: false
-          app_store_connect:
-            auth: integration
-            submit_to_testflight: true
-            submit_to_app_store: false
+            email:
+              recipients:
+                - chaunn@vihatgroup.com
+              notify:
+                success: true
+                failure: false
+            app_store_connect:
+              auth: integration
+              submit_to_testflight: true
+              submit_to_app_store: false
