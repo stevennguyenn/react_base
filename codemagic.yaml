@@ -61,6 +61,9 @@ workflows:
           xcode: latest
           cocoapods: default
         scripts:
+          - name: Test clone
+            scrip: |
+              git clone git@gitlab.com:vihat_outsource/merchantapp.git
           - name: Set up code signing settings on Xcode project
             script: xcode-project use-profiles
           - name: Set up fastlane, notification, increase build number
