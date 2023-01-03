@@ -75,7 +75,7 @@ workflows:
               set -e
               set -x
               cd $CM_BUILD_DIR/ios
-              LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number "$APP_ID")
+              LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number "$APP_ID" --issuer-id=$ISSUER_ID --private-key=$APP_STORE_CONNECT_PRIVATE_KEY)
               agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
           - name: Build ipa for distribution
             script: |
