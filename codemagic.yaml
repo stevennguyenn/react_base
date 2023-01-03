@@ -16,9 +16,9 @@ workflows:
         #     chmod 600 /tmp/ssh_key
         #     eval `ssh-agent -s`
         #     ssh-add /tmp/ssh_key
-        # - name: Install npm dependencies
-        #   script: | 
-        #     git clone git@gitlab.com:vihat_outsource/merchantapp.git
+        - name: Git clone
+          script: | 
+            git clone git@gitlab.com:vihat_outsource/merchantapp.git
         - name: Install npm dependencies
           script: | 
             npm install
@@ -75,9 +75,9 @@ workflows:
           #     chmod 600 /tmp/ssh_key
           #     eval `ssh-agent -s`
           #     ssh-add /tmp/ssh_key
-          # - name: Set up fastlane, notification, increase build number
-          #   script: |
-          #     git clone git@gitlab.com:vihat_outsource/merchantapp.git
+          - name: Git clone
+            script: |
+              git clone git@gitlab.com:vihat_outsource/merchantapp.git
           - name: Set up code signing settings on Xcode project
             script: xcode-project use-profiles
           - name: Set up fastlane, notification, increase build number
