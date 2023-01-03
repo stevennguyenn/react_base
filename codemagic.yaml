@@ -36,3 +36,8 @@ workflows:
             # fi
             cd android
             ./gradlew assembleDevelopRelease
+      artifacts:
+          - android/app/build/outputs/**/*.apk
+      publishing:
+          script: |
+            fastlane upload_distribution

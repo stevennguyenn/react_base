@@ -14,11 +14,7 @@ fastlane_require 'dotenv'
 
 lane :increase_build_number_android do |options|
   env = options[:env]
-#     sh("fastlane android deploy env:#{env}")
-#     sh("fastlane ios deploy env:#{env} && fastlane android deploy env:#{env}")
-#     sh("fastlane ios deploy env:#{env}")
   sh("fastlane android deploy env:#{env}")
-#     reset_git_repo(force: true, disregard_gitignore: false)
 end
 
 lane :finish_build_telegram do
@@ -39,10 +35,8 @@ end
 
 lane :upload_distribution do |options|
     env = options[:env]
-#     sh("fastlane android deploy env:#{env}")
-#     sh("fastlane ios deploy env:#{env} && fastlane android deploy env:#{env}")
-#     sh("fastlane ios deploy env:#{env}")
-    apk_path = "#{root_path}/build/app/outputs/flutter-apk/app-#{env}-release.apk"
+    before_all_lane(env: env)
+    apk_path = "#{root_path}/build/app/outputs/apk/#{env}/release/app-#{env}-release.apk"
     firebase_app_distribution(
         app: ENV["FIREBASE_APP_ID"],
         release_notes_file: "fastlane/file/release_note.txt",
