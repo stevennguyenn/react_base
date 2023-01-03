@@ -55,9 +55,13 @@ workflows:
             XCODE_WORKSPACE: "sr_marketplace_reactnative.xcworkspace" # <-- Put the name of your Xcode workspace here
             XCODE_SCHEME: "develop" # <-- Put the name of your Xcode scheme here
             APP_ID: 6444644761 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
+          groups:
+            - google_play
           xcode: latest
           cocoapods: default
         scripts:
+          - name: Set up code signing settings on Xcode project
+            script: xcode-project use-profiles
           - name: Install npm dependencies
             script: |
               npm install
@@ -93,6 +97,8 @@ workflows:
               success: true
               failure: false
           app_store_connect:
-            auth: integration
+            api_key: $APP_STORE_CONNECT_PRIVATE_KEY 
+            key_id: $KEY_ID 
+            issuer_id: $ISSUER_ID
             submit_to_testflight: true
             submit_to_app_store: false
