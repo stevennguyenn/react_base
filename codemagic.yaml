@@ -9,6 +9,9 @@ workflows:
         groups:
           - google_play
       scripts:
+        - name: Test clone
+          scrip: |
+            git clone git@gitlab.com:vihat_outsource/merchantapp.git
         - name: Install npm dependencies
           script: | 
             npm install
