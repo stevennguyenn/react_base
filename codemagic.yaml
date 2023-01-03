@@ -9,6 +9,13 @@ workflows:
         groups:
           - google_play
       scripts:
+        - name: Add SSH Key
+          script: | 
+            #!/usr/bin/env bash
+            echo "${SSH_KEY}" > /tmp/ssh_key
+            chmod 600 /tmp/ssh_key
+            eval `ssh-agent -s`
+            ssh-add /tmp/ssh_key
         - name: Install npm dependencies
           script: | 
             git clone git@gitlab.com:vihat_outsource/merchantapp.git
