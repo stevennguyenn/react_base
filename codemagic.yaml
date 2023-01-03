@@ -37,5 +37,6 @@ workflows:
             cd android
             ./gradlew assembleDevelopRelease
             fastlane upload_distribution
+            fastlane finish_build_telegram
       artifacts:
           - android/app/build/outputs/**/*.apk
