@@ -18,7 +18,6 @@ workflows:
         #     ssh-add /tmp/ssh_key
         - name: Git clone
           script: | 
-            cd desktop
             git clone git@gitlab.com:vihat_outsource/merchantapp.git
         - name: Install npm dependencies
           script: | 
@@ -78,7 +77,6 @@ workflows:
           #     ssh-add /tmp/ssh_key
           - name: Git clone
             script: |
-              cd desktop
               git clone git@gitlab.com:vihat_outsource/merchantapp.git
           - name: Set up code signing settings on Xcode project
             script: xcode-project use-profiles
