@@ -9,8 +9,11 @@ workflows:
       triggering:
         events:
           - tag
+          - push
         tag_patterns:
           - pattern: '*'
+        branch_patterns:
+          - pattern: 'develop'
         cancel_previous_builds: false 
       scripts:
         - name: Get enviroment
