@@ -54,10 +54,11 @@ workflows:
         max_build_duration: 120
         instance_type: mac_mini_m1
         environment:
-          ios_signing:
-            distribution_type: app_store
           groups:
             - google_play
+          ios_signing:
+            distribution_type: app_store
+            bundle_identifier: $APP_ID
           xcode: latest
           cocoapods: default
         scripts:
