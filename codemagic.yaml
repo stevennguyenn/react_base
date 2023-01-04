@@ -6,7 +6,7 @@ workflows:
           - tag
           - push
         tag_patterns:          
-          - pattern: android-*
+          - pattern: '*'
         branch_patterns: 
           - pattern: develop
             include: false
