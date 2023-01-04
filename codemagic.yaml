@@ -10,12 +10,7 @@ workflows:
         events:
           - tag
         tag_patterns:
-          - pattern: android
-            include: true
-        branch_patterns:
-          - pattern: develop
-            include: true
-            source: true
+          - pattern: '*'
         cancel_previous_builds: false 
       scripts:
         - name: Get enviroment
@@ -72,17 +67,6 @@ workflows:
             bundle_identifier: $APP_ID
           xcode: latest
           cocoapods: default
-        triggering:
-          events:
-            - tag
-          tag_patterns:
-            - pattern: android
-              include: true
-          branch_patterns:
-            - pattern: develop
-              include: true
-              source: true
-          cancel_previous_builds: false 
         scripts:
           - name: Get enviroment
             script: | 
