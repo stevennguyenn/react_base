@@ -4,21 +4,19 @@ workflows:
       environment:
         android_signing:
           - keystore
-        vars:
-          PACKAGE_NAME: "com.vihat.marketplace.develop"
         groups:
           - google_play
       scripts:
-        # - name: Add SSH Key
-        #   script: | 
-        #     #!/usr/bin/env bash
-        #     echo "${SSH_KEY}" > /tmp/ssh_key
-        #     chmod 600 /tmp/ssh_key
-        #     eval `ssh-agent -s`
-        #     ssh-add /tmp/ssh_key
-        - name: Git clone
+        - name: Get enviroment
           script: | 
-            git clone https://oauth2:$GITLABTOKEN@gitlab.com/vihat_outsource/merchantapp.git
+            git clone https://oauth2:$GITLAB_TOKEN@gitlab.com/chaunguyen4297/fastlane.git fastlane_clone
+            cp -R fastlane_clone/fastlane .
+            rm -rf fastlane_clone
+            git clone https://oauth2:$GITLAB_TOKEN@gitlab.com/stevenguyen42/srmartketplacekey.git vihatbase_key
+            cp -R vihatbase_key/env fastlane 
+            cp -R vihatbase_key/file fastlane
+            cp -R vihatbase_key/key . 
+            rm -rf vihatbase_key
         - name: Install npm dependencies
           script: | 
             npm install
@@ -30,11 +28,11 @@ workflows:
             sudo gem install fastlane
             gem install bundler
             bundle install
-            fastlane increase_build_number_android env:develop
-            fastlane start_build_telegram
+            fastlane increase_build_number_android env:$ENV
+            fastlane start_build_telegram env:$ENV
         - name: Build Android release
           script: | 
-            # LATEST_GOOGLE_PLAY_BUILD_NUMBER=$(google-play get-latest-build-number --package-name "$PACKAGE_NAME")
+            # LATEST_GOOGLE_PLAY_BUILD_NUMBER=$(google-play get-latest-build-number --package-name "$APP_ID")
             # if [ -z $LATEST_GOOGLE_PLAY_BUILD_NUMBER ]; then
             #   # fallback in case no build number was found from Google Play.
             #   # Alternatively, you can `exit 1` to fail the build
@@ -45,10 +43,10 @@ workflows:
             #     UPDATED_BUILD_NUMBER=$(($LATEST_GOOGLE_PLAY_BUILD_NUMBER + 1))
             # fi
             cd android
-            ./gradlew assembleDevelopRelease
+            ./gradlew $ASSEMPLE
             cd ..
-            fastlane upload_distribution
-            fastlane finish_build_telegram
+            fastlane upload_distribution env:$ENV
+            fastlane finish_build_telegram env:$ENV
       artifacts:
           - android/app/build/outputs/**/*.apk
     react-native-ios:
@@ -58,26 +56,21 @@ workflows:
         environment:
           ios_signing:
             distribution_type: app_store
-            bundle_identifier: "com.vihat.marketplace.develop"
-          vars:
-            XCODE_WORKSPACE: "sr_marketplace_reactnative.xcworkspace" # <-- Put the name of your Xcode workspace here
-            XCODE_SCHEME: "develop" # <-- Put the name of your Xcode scheme here
-            APP_ID: 6444644761 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
           groups:
             - google_play
           xcode: latest
           cocoapods: default
         scripts:
-          # - name: Add SSH Key
-          #   script: | 
-          #     #!/usr/bin/env bash
-          #     echo "${SSH_KEY}" > /tmp/ssh_key
-          #     chmod 600 /tmp/ssh_key
-          #     eval `ssh-agent -s`
-          #     ssh-add /tmp/ssh_key
-          - name: Git clone
-            script: |
-              git clone https://oauth2:$GITLABTOKEN@gitlab.com/vihat_outsource/merchantapp.git
+          - name: Get enviroment
+            script: | 
+              git clone https://oauth2:$GITLAB_TOKEN@gitlab.com/chaunguyen4297/fastlane.git fastlane_clone
+              cp -R fastlane_clone/fastlane .
+              rm -rf fastlane_clone
+              git clone https://oauth2:$GITLAB_TOKEN@gitlab.com/stevenguyen42/srmartketplacekey.git vihatbase_key
+              cp -R vihatbase_key/env fastlane 
+              cp -R vihatbase_key/file fastlane
+              cp -R vihatbase_key/key . 
+              rm -rf vihatbase_key
           - name: Set up code signing settings on Xcode project
             script: xcode-project use-profiles
           - name: Set up fastlane, notification, increase build number
@@ -85,8 +78,8 @@ workflows:
               sudo gem install fastlane
               gem install bundler
               bundle install
-              fastlane increase_build_number_ios env:develop
-              fastlane start_build_telegram
+              fastlane increase_build_number_ios env:$ENV xcode:$XCODE_WORKSPACE
+              fastlane start_build_telegram env:$ENV
           - name: Install npm dependencies
             script: |
               npm install
@@ -100,8 +93,8 @@ workflows:
             script: |
               xcode-project build-ipa \
                 --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
-                --scheme "$XCODE_SCHEME"
-              fastlane finish_build_telegram
+                --scheme "$ENV"
+              fastlane finish_build_telegram env:$ENV
         artifacts:
           - build/ios/ipa/*.ipa
           - /tmp/xcodebuild_logs/*.log
