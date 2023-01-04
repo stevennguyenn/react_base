@@ -4,8 +4,12 @@ workflows:
       triggering:
         events:
           - tag
+          - push
         tag_patterns:          
           - pattern: android-*
+        branch_patterns: 
+          - pattern: develop
+            include: false
         cancel_previous_builds: true
       environment:
         android_signing:
