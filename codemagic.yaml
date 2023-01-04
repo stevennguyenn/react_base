@@ -8,10 +8,9 @@ workflows:
           - google_play
       triggering:
         events:
-          - push
           - tag
         branch_patterns:
-          - pattern: develop
+          - pattern: android
             include: true
             source: true
         cancel_previous_builds: false 
@@ -72,10 +71,9 @@ workflows:
           cocoapods: default
         triggering:
           events:
-            - push
             - tag
           branch_patterns:
-            - pattern: develop
+            - pattern: ios
               include: true
               source: true
           cancel_previous_builds: false 
