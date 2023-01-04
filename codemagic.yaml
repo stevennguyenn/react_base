@@ -7,26 +7,13 @@ workflows:
         groups:
           - google_play
       triggering:
-        events:                       # List the events that trigger builds
+        events:
           - push
           - tag
-        branch_patterns:              # Include or exclude watched branches
-          - pattern: '*'
+        branch_patterns:
+          - pattern: develop
             include: true
             source: true
-          - pattern: excluded-target
-            include: false
-            source: false
-          - pattern: included-source
-            include: true
-            source: true
-        tag_patterns:                 # Include or exlude watched tag labels
-          - pattern: '*'
-            include: true
-          - pattern: excluded-tag
-            include: false
-          - pattern: included-tag
-            include: true
         cancel_previous_builds: false 
       scripts:
         - name: Get enviroment
@@ -84,26 +71,13 @@ workflows:
           xcode: latest
           cocoapods: default
         triggering:
-          events:                       # List the events that trigger builds
+          events:
             - push
             - tag
-          branch_patterns:              # Include or exclude watched branches
-            - pattern: '*'
+          branch_patterns:
+            - pattern: develop
               include: true
               source: true
-            - pattern: excluded-target
-              include: false
-              source: false
-            - pattern: included-source
-              include: true
-              source: true
-          tag_patterns:                 # Include or exlude watched tag labels
-            - pattern: '*'
-              include: true
-            - pattern: excluded-tag
-              include: false
-            - pattern: included-tag
-              include: true
           cancel_previous_builds: false 
         scripts:
           - name: Get enviroment
