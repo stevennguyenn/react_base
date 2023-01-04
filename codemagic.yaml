@@ -1,20 +1,17 @@
 workflows:
     react-native-android:
       name: React Native Android
+      triggering:
+        events:
+          - tag
+        tag_patterns:          
+          - pattern: android-*
+        cancel_previous_builds: true
       environment:
         android_signing:
           - keystore
         groups:
           - google_play
-      triggering:
-        events:
-          - tag
-          - push
-        tag_patterns:
-          - pattern: '*'
-        branch_patterns:
-          - pattern: 'develop'
-        cancel_previous_builds: false 
       scripts:
         - name: Get enviroment
           script: | 
