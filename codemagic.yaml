@@ -4,7 +4,6 @@ workflows:
       triggering:
         events:
           - tag
-          - push
         tag_patterns:          
           - pattern: '*'
         branch_patterns: 
