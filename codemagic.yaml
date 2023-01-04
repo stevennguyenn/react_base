@@ -6,6 +6,13 @@ workflows:
           - keystore
         groups:
           - google_play
+      triggering:
+        events:
+          - tag
+        branch_patterns:
+          - pattern: develop
+            include: true
+            source: true
       scripts:
         - name: Get enviroment
           script: | 
@@ -61,6 +68,13 @@ workflows:
             bundle_identifier: $APP_ID
           xcode: latest
           cocoapods: default
+        triggering:
+          events:
+            - tag
+          branch_patterns:
+            - pattern: develop
+              include: true
+              source: true
         scripts:
           - name: Get enviroment
             script: | 
