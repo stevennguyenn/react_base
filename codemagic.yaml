@@ -9,7 +9,6 @@ workflows:
           - pattern: '*'
         branch_patterns: 
           - pattern: develop
-            include: false
         cancel_previous_builds: true
       environment:
         android_signing:
