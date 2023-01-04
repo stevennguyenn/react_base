@@ -11,8 +11,6 @@ workflows:
           - tag
         branch_patterns:
           - pattern: develop
-            include: true
-            source: true
       scripts:
         - name: Get enviroment
           script: | 
@@ -73,8 +71,6 @@ workflows:
             - tag
           branch_patterns:
             - pattern: develop
-              include: true
-              source: true
         scripts:
           - name: Get enviroment
             script: | 
