@@ -9,8 +9,11 @@ workflows:
       triggering:
         events:
           - tag
-        branch_patterns:
+        tag_patterns:
           - pattern: android
+            include: true
+        branch_patterns:
+          - pattern: develop
             include: true
             source: true
         cancel_previous_builds: false 
@@ -72,8 +75,11 @@ workflows:
         triggering:
           events:
             - tag
+          tag_patterns:
+            - pattern: android
+              include: true
           branch_patterns:
-            - pattern: ios
+            - pattern: develop
               include: true
               source: true
           cancel_previous_builds: false 
