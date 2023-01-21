@@ -2,8 +2,7 @@ import React from 'react';
 import { Alert, StyleSheet, View } from 'react-native';
 import { scale } from 'react-native-size-scaling';
 import { Avatar } from 'react-native-element-image';
-
-const img_avatar = require('@assets/images/icons/ic-avatar.png');
+import IMAGES from '@assets/pictures';
 
 export interface Props {}
 
@@ -13,7 +12,7 @@ const AvatarScreen: React.FC<Props> = _props => {
       <Avatar
         size={scale(80)}
         containerStyle={styles.avatar}
-        source={img_avatar}
+        source={IMAGES.avatar}
         iconEnable={false}
         onPressIcon={() => Alert.alert('Click')}
         nameStyle={{ fontSize: scale(20) }}
@@ -22,7 +21,7 @@ const AvatarScreen: React.FC<Props> = _props => {
       <Avatar
         size={scale(80)}
         containerStyle={styles.avatar}
-        source={img_avatar}
+        source={IMAGES.avatar}
         iconEnable
         onPressIcon={() => Alert.alert('Click')}
         nameStyle={{ fontSize: scale(20) }}
@@ -31,7 +30,7 @@ const AvatarScreen: React.FC<Props> = _props => {
       <Avatar
         size={scale(100)}
         containerStyle={styles.avatar}
-        source={img_avatar}
+        source={IMAGES.avatar}
         iconEnable
         onPressIcon={() => Alert.alert('Click')}
         name="User name"
@@ -41,7 +40,7 @@ const AvatarScreen: React.FC<Props> = _props => {
       <Avatar
         size={scale(150)}
         containerStyle={styles.avatar}
-        source={img_avatar}
+        source={IMAGES.avatar}
         iconEnable
         onPressIcon={() => Alert.alert('click')}
         name="User name"

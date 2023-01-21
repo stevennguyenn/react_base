@@ -9,7 +9,7 @@ import { scale } from 'react-native-size-scaling';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { styles } from './styles';
 
-const IMG_BACKGROUND = require('@assets/images/pictures/background.jpg');
+const IMG_BACKGROUND = require('../../assets/pictures/background.jpg');
 
 interface Props {}
 

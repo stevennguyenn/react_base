@@ -1,10 +1,18 @@
+import { COLORS } from '@config';
 import { StyleSheet } from 'react-native-size-scaling';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingHorizontal: 24,
     justifyContent: 'center',
-    padding: 16,
+    backgroundColor: COLORS.BG_COLOR,
+    alignItems: 'center',
+  },
+  logoImage: {
+    width: 258,
+    height: 69,
+    resizeMode: 'contain',
   },
   wrapBox: {
     backgroundColor: '#F8F8FF',
@@ -27,21 +35,8 @@ export const styles = StyleSheet.create({
     marginVertical: 12,
     color: 'gray',
   },
-  textinput: {
-    backgroundColor: 'white',
-    marginTop: 20,
-    height: 60,
-    paddingHorizontal: 16,
-    borderRadius: 8,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 1,
-    },
-    shadowOpacity: 0.2,
-    shadowRadius: 1.41,
-
-    elevation: 2,
+  textInput: {
+    marginTop: 48,
   },
   inputStyle: { fontSize: 16 },
   labelStyle: { fontSize: 14 },
@@ -65,5 +60,9 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 16,
     color: 'gray',
+  },
+  rightIcon: {
+    width: 24,
+    height: 24,
   },
 });

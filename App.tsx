@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, LogBox, StatusBar } from 'react-native';
 import AppWithNavigationState from '@navigators';
 import {} from '@components';
@@ -9,10 +9,14 @@ import i18next from '@shared/language';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from '@reduxCore/store';
+import SplashScreen from 'react-native-splash-screen';
 
 LogBox.ignoreAllLogs(true);
 StatusBar.setBarStyle('dark-content');
 const MyBase = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
   return (
     <View style={{ flex: 1 }}>
       <I18nextProvider i18n={i18next}>
@@ -27,4 +31,5 @@ const MyBase = () => {
     </View>
   );
 };
+
 export default MyBase;

@@ -1014,6 +1014,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZD8A96Y6GA;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Info-develop.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SR Marketplace RN";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1045,6 +1046,7 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZD8A96Y6GA;
 				INFOPLIST_FILE = "Info-develop.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SR Marketplace RN";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1074,6 +1076,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Info-staging.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SR Marketplace RN";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1102,6 +1105,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Info-staging.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SR Marketplace RN";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1130,6 +1134,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Info-production.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SR Marketplace RN";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1158,6 +1163,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Info-production.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SR Marketplace RN";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

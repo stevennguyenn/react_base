@@ -13,10 +13,6 @@ export const globalLoading = {
   },
 };
 
-export interface Props {
-  name?: string;
-}
-
 const GlobalLoading = React.forwardRef((props, ref) => {
   const [visible, setVisible] = useState<boolean>(false);
 

@@ -3,8 +3,7 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { Button, globalLoading, Text } from '@components';
 import { useFormik } from 'formik';
 import React, { useEffect } from 'react';
-import { ImageBackground, View } from 'react-native';
-import { TextInput } from 'react-native-element-textinput';
+import { View, Image } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import {
@@ -13,9 +12,8 @@ import {
   todoRequestAction,
 } from '@reduxCore/main/slice';
 import { styles } from './styles';
-import Config from 'react-native-config';
-
-const IMG_BACKGROUND = require('@assets/images/pictures/background.jpg');
+import IMAGES from '@assets/pictures';
+import AppInput from '@components/AppInput';
 
 interface Props {}
 
@@ -50,69 +48,59 @@ const RegisterScrenn: React.FC<Props> = () => {
     },
     onSubmit: _values => {
       globalLoading.show();
-      setTimeout(() => {
+      const timeOut = setTimeout(() => {
         globalLoading.hide();
         navigate('Main');
       }, 1000);
+      return clearTimeout(timeOut);
     },
   });
 
   return (
-    <ImageBackground
-      style={styles.container}
-      source={IMG_BACKGROUND}
-      resizeMode="cover">
-      <View style={styles.wrapBox}>
-        <Text style={styles.title} bold fontSize={24}>
-          {'Environment: ' + Config.GOOGLE_URL}
-        </Text>
-        <TextInput
-          style={styles.textinput}
-          inputStyle={styles.inputStyle}
-          labelStyle={styles.labelStyle}
-          placeholderStyle={styles.placeholderStyle}
-          textErrorStyle={styles.textErrorStyle}
-          value={formik.values.username}
-          onChangeText={formik.handleChange('username')}
-          label="Username"
-          placeholder="Placeholder"
-          placeholderTextColor="gray"
-          textError={formik.errors.username}
-        />
+    <View style={styles.container}>
+      <Image source={IMAGES.logo} style={styles.logoImage} />
+      <AppInput style={styles.textInput} title="Courriel" hint="Courriel" />
+      <AppInput
+        style={{ marginTop: 24 }}
+        title="Mot de passe"
+        hint="Mot de passe"
+        isPassword={true}
+        rightIcon={IMAGES.icShowPassword}
+      />
 
-        <TextInput
-          style={styles.textinput}
-          inputStyle={styles.inputStyle}
-          labelStyle={styles.labelStyle}
-          placeholderStyle={styles.placeholderStyle}
-          textErrorStyle={styles.textErrorStyle}
-          value={formik.values.password}
-          textContentType="oneTimeCode"
-          onChangeText={formik.handleChange('password')}
-          label="Password"
-          placeholder="Enter password"
-          placeholderTextColor="gray"
-          secureTextEntry
-          textError={formik.errors.password}
-        />
+      <Image style={styles.rightIcon} source={IMAGES.icShowPassword} />
+      {/* <TextInput
+        style={styles.textInput}
+        inputStyle={styles.inputStyle}
+        labelStyle={styles.labelStyle}
+        placeholderStyle={styles.placeholderStyle}
+        textErrorStyle={styles.textErrorStyle}
+        value={formik.values.password}
+        textContentType="oneTimeCode"
+        onChangeText={formik.handleChange('password')}
+        label="Password"
+        placeholder="Enter password"
+        placeholderTextColor="gray"
+        secureTextEntry={true}
+        textError={formik.errors.password}
+      /> */}
 
-        <Button
-          style={styles.button}
-          title="Login"
-          fontSize={20}
-          onPress={formik.handleSubmit}
-        />
-        <Text style={styles.textOr} fontSize={16}>
-          Or
-        </Text>
-        <Text
-          style={styles.textOr}
-          fontSize={18}
-          onPress={() => navigate('Register')}>
-          Create new account?
-        </Text>
-      </View>
-    </ImageBackground>
+      <Button
+        style={styles.button}
+        title="Login"
+        fontSize={20}
+        onPress={formik.handleSubmit}
+      />
+      <Text style={styles.textOr} fontSize={16}>
+        Or
+      </Text>
+      <Text
+        style={styles.textOr}
+        fontSize={18}
+        onPress={() => navigate('Register')}>
+        Create new account?
+      </Text>
+    </View>
   );
 };
 

@@ -6,11 +6,12 @@ import { scale } from 'react-native-size-scaling';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { styles } from './styles';
 import { HeaderProps } from './model';
+import IMAGES from '@assets/pictures';
 
 const HeaderComponent: HeaderProps = props => {
   const {
     name = 'Hoà Phan Dev',
-    avatar = require('@assets/images/icons/ic-avatar.png'),
+    avatar = IMAGES.avatar,
     onPressUser,
     onChangeText,
   } = props;
